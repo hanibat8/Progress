@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img{
+    height: 100%;
+}
+
+.progress_circle__container{
+    display: flex;
+    align-items: center;
+    width: 20vw;
+}
+
+.progress_circle{
+   height: 1.5rem;
+   width: 1.5rem;
+   border: 1px solid black;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.horizontal-line{
+    flex: 1;
+    height: .2rem;
+    border: none;
+}
+
+.buttons{
+    margin-top: 2rem;
+}
+
+.button{
+    padding: .4rem 1.7rem;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button:active{
+    transform: scale(.80);
+}
+
+.button:not(:last-of-type){
+    margin-right: .5rem;
+}
+
+.active{
+    border :2px solid rgb(59, 132, 216);
+    transition: all .2s ease-in;
+   
+}
+
+.active--btn{
+    background-color:rgb(59, 132, 216);
+    transition: all .2s ease-in;
+}
+
+.inactive{
+    border :2px solid rgb(214, 214, 214);
+    transition: all .2s ease-in;
+   
+}
+
+.inactive--btn{
+    background-color: rgb(214, 214, 214);
+    transition: all .2s ease-in;
+}
